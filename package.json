@@ -1,0 +1,23 @@
+{
+  "name": "addkey",
+  "version": "1.0.0",
+  "description": "为数组类型的值添加新项，并过滤子项",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoyueyue165/addKey.git"
+  },
+  "keywords": [
+    "array",
+    "addKey"
+  ],
+  "author": "xiaoyueyue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaoyueyue165/addKey/issues"
+  },
+  "homepage": "https://github.com/xiaoyueyue165/addKey#readme"
+}
