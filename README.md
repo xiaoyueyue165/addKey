@@ -1,21 +1,10 @@
 # addKey
 > Add a new item to the value of the array type and filter the child
 
-## Install
-
-Install with [npm](https://www.npmjs.com/):
-
-```sh
-$ npm install --save addkey
-```
 
 ## Usage
 
 Works with arrays.
-
-```js
-# addKey
-> Add a new item to the value of the array type and filter the child
 
 ## Install
 
