@@ -1,5 +1,5 @@
 # addKey
-> Add a new key-value pair for a single item of array type and filter the children
+> Add a new key-value pair for each single item of the array type and filter the children
 
 
 ## Usage

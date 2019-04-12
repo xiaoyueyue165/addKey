@@ -1,10 +1,10 @@
 {
   "name": "addkey",
-  "version": "1.0.0",
-  "description": "为数组类型的单项添加新的键值对，并过滤子项",
+  "version": "0.0.1",
+  "description": "Add a new key-value pair for a single item of array type and filter the children",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -12,12 +12,20 @@
   },
   "keywords": [
     "array",
-    "addKey"
+    "add",
+    "key",
+    "value",
+    "object",
+    "filter",
+    "every"
   ],
   "author": "xiaoyueyue",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xiaoyueyue165/addKey/issues"
   },
-  "homepage": "https://github.com/xiaoyueyue165/addKey#readme"
+  "homepage": "https://github.com/xiaoyueyue165/addKey#readme",
+  "devDependencies": {
+    "mocha": "^6.1.3"
+  }
 }
