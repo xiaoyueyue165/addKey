@@ -34,8 +34,8 @@ let arr = [
         name: '曹操'
     }
 ]
-addKey(arr, { 'isShow': true }, (v, index, array) => {
-    index === array.length - 1 ? v.name = '铠'  : '';
+ addKey(arr, { 'isShow': false }, (v, index, array) => {
+    index === array.length - 1 ? (v.name = '铠', v.isShow = true) : ''
 })
 
 // log arr =>
@@ -44,7 +44,7 @@ addKey(arr, { 'isShow': true }, (v, index, array) => {
    [
       { id: 1, name: '亚瑟', isShow: false },
       { id: 2, name: '狄仁杰', isShow: false },
-      { id: 3, name: '铠', isShow: false }
+      { id: 3, name: '铠', isShow: true }
    ] 
 */
 ```
