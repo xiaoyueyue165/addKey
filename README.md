@@ -66,14 +66,3 @@ addKey(arr, { 'isShow': true }, (v, index, array) => {
 Copyright © 2019, [xiaoyueyue](https://github.com/xiaoyueyue165).
 Released under the [MIT License](LICENSE).
 
-
-
-```
-
-
-### License
-
-Copyright © 2019, [xiaoyueyue](https://github.com/xiaoyueyue165).
-Released under the [MIT License](LICENSE).
-
-
