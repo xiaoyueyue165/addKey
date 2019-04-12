@@ -1,7 +1,7 @@
 {
   "name": "addkey",
   "version": "1.0.0",
-  "description": "为数组类型的值添加新项，并过滤子项",
+  "description": "为数组类型的单项添加新的键值对，并过滤子项",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
