@@ -1,4 +1,4 @@
-# addKey
+# addKey [![Build Status](https://travis-ci.org/xiaoyueyue165/addKey.svg?branch=master)](https://travis-ci.org/xiaoyueyue165/addKey)
 > Add a new key-value pair for each single item of the array type and filter the children
 
 
