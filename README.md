@@ -19,7 +19,7 @@ $ npm install --save addkey
 Works with arrays.
 
 ```js
-const addKey = require('./addkey');
+const addKey = require('addkey');
 let arr = [
     {
         id: 1,
