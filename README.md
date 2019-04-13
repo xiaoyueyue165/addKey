@@ -1,4 +1,4 @@
-# addKey [![Build Status](https://travis-ci.org/xiaoyueyue165/addKey.svg?branch=master)](https://travis-ci.org/xiaoyueyue165/addKey)
+# addKey [![NPM version](https://img.shields.io/npm/v/addkey.svg?style=flat)](https://www.npmjs.com/package/addkey) [![NPM monthly downloads](https://img.shields.io/npm/dm/addkey.svg?style=flat)](https://npmjs.org/package/addkey) [![NPM total downloads](https://img.shields.io/npm/dt/addkey.svg?style=flat)](https://npmjs.org/package/addkey) [![Build Status](https://travis-ci.org/xiaoyueyue165/addKey.svg?branch=master)](https://travis-ci.org/xiaoyueyue165/addKey)
 > Add a new key-value pair for each single item of the array type and filter the children
 
 
