@@ -4,8 +4,8 @@
  * 为数组添加新的自定义键值以及过滤每个子项的方法
  *
  * @param {*} arr
- * @param {*} obj { isShow:false,isStar:false} 第二个参数为 Function 时
- * @param {*} filterFn 第二个参数为 Object 时
+ * @param {*} obj { isShow:false,isStar:false} 第二个参数为 Function 时 可省
+ * @param {*} filterFn 第二个参数为 Object 时 可省
  * @returns Array
  */
 
@@ -28,7 +28,7 @@ module.exports = function addKey(sourceArray, extendObj, filterFn) {
     })
   } else if (secondParamType === 'Function') {
     return sourceArray.forEach((v, index, sourceArray) => {
-      typeof arguments[1] === 'function' ? arguments[1](v, index, sourceArray) : '';
+      arguments[1](v, index, sourceArray)
     })
   } else {
     return sourceArray;

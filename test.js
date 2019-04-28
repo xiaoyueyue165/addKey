@@ -18,7 +18,6 @@ let arr = [
     }
 ]
 describe('addKey', function () {
-
     it('should return add custom key:', function () {
         addKey(arr, { 'Address': 'Chinese' })
 
@@ -34,6 +33,16 @@ describe('addKey', function () {
 
         assert(!arr[0].isShow)
         assert(!arr[1].isShow)
+        assert(arr[2].isShow) // true
+    });
+
+    it('should return omit custom key and filtered correctly:', function () {
+        addKey(arr, (v, index, array) => {
+            index === array.length - 1 ? (v.name = '曹操', v.isShow = true) : ''
+        })
+
+        assert(arr[0].isShow === undefined)
+        assert(arr[1].isShow === undefined)
         assert(arr[2].isShow) // true
     });
 
