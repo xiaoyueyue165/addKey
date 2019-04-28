@@ -41,8 +41,8 @@ describe('addKey', function () {
             index === array.length - 1 ? (v.name = '曹操', v.isShow = true) : ''
         })
 
-        assert(arr[0].isShow === undefined)
-        assert(arr[1].isShow === undefined)
+        assert(!arr[0].isShow)
+        assert(!arr[1].isShow)
         assert(arr[2].isShow) // true
     });
 
