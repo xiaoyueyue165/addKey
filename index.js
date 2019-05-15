@@ -11,7 +11,7 @@
 
 module.exports = function addKey(sourceArray, extendObj, filterFn) {
   var getType = function(a) {
-    return Object.prototype.toString.call(data).slice(8, -1);
+    return Object.prototype.toString.call(a).slice(8, -1);
   };
   var secondParamType = getType(arguments[1]);
 
