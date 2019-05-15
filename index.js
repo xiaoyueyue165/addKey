@@ -11,8 +11,7 @@
 
 module.exports = function addKey(sourceArray, extendObj, filterFn) {
   var getType = function(a) {
-    var typeArray = Object.prototype.toString.call(a).split(" ");
-    return typeArray[1].slice(0, -1);
+    return Object.prototype.toString.call(data).slice(8, -1);
   };
   var secondParamType = getType(arguments[1]);
 
@@ -31,6 +30,13 @@ module.exports = function addKey(sourceArray, extendObj, filterFn) {
       arguments[1](v, index, sourceArray);
     });
   } else {
+    if (arguments.length > 1) {
+      console.warn(
+        "The second parameter type is " +
+          secondParamType +
+          " , Must use an object or function type"
+      );
+    }
     return sourceArray;
   }
 };
