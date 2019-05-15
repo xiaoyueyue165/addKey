@@ -1,6 +1,6 @@
 {
   "name": "addkey",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Add a new key-value pair for a single item of array type and filter the children",
   "main": "index.js",
   "scripts": {
