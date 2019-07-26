@@ -41,8 +41,8 @@ let arr = [
   }
 ];
 addKey(arr, (v, index, array) => {
-  delete v.ctime;
   v.time = toTime(v.ctime);
+  delete v.ctime;
 });
 
 // log arr =>
