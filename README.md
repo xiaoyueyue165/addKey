@@ -20,18 +20,59 @@ Works with arrays.
 
 ```js
 const addKey = require("addkey");
+const moment = require("moment");
+const toTime = ctime => moment(ctime * 1000).format("YYYY-MM-DD");
+
 let arr = [
   {
     id: 1,
-    name: "亚瑟"
+    name: "亚瑟",
+    ctime: "1554863144"
   },
   {
     id: 2,
-    name: "狄仁杰"
+    name: "狄仁杰",
+    ctime: "1557045386"
   },
   {
     id: 3,
-    name: "曹操"
+    name: "曹操",
+    ctime: "1548040191"
+  }
+];
+addKey(arr, (v, index, array) => {
+  v.time = toTime(v.ctime);
+});
+
+// log arr =>
+
+/* [
+  { id: 1, name: "亚瑟", time: "2019-04-10" },
+  { id: 2, name: "狄仁杰", time: "2019-05-05" },
+  { id: 3, name: "铠", time: "2019-01-21" }
+]; */
+```
+
+or
+
+```js
+const addKey = require("addkey");
+
+let arr = [
+  {
+    id: 1,
+    name: "亚瑟",
+    ctime: "1554863144"
+  },
+  {
+    id: 2,
+    name: "狄仁杰",
+    ctime: "1557045386"
+  },
+  {
+    id: 3,
+    name: "曹操",
+    ctime: "1548040191"
   }
 ];
 addKey(arr, { isShow: false }, (v, index, array) => {
@@ -40,13 +81,11 @@ addKey(arr, { isShow: false }, (v, index, array) => {
 
 // log arr =>
 
-/*  
-   [
-      { id: 1, name: '亚瑟', isShow: false },
-      { id: 2, name: '狄仁杰', isShow: false },
-      { id: 3, name: '铠', isShow: true }
-   ] 
-*/
+/* [
+  { id: 1, name: "亚瑟", isShow: false },
+  { id: 2, name: "狄仁杰", isShow: false },
+  { id: 3, name: "铠", isShow: true }
+]; */
 ```
 
 ### License
