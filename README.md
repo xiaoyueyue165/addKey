@@ -41,6 +41,7 @@ let arr = [
   }
 ];
 addKey(arr, (v, index, array) => {
+  delete v.ctime;
   v.time = toTime(v.ctime);
 });
 
@@ -61,18 +62,15 @@ const addKey = require("addkey");
 let arr = [
   {
     id: 1,
-    name: "亚瑟",
-    ctime: "1554863144"
+    name: "亚瑟"
   },
   {
     id: 2,
-    name: "狄仁杰",
-    ctime: "1557045386"
+    name: "狄仁杰"
   },
   {
     id: 3,
-    name: "曹操",
-    ctime: "1548040191"
+    name: "曹操"
   }
 ];
 addKey(arr, { isShow: false }, (v, index, array) => {
