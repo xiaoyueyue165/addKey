@@ -88,5 +88,5 @@ addKey(arr, { isShow: false }, (v, index, array) => {
 
 ### License
 
-Copyright © 2019, [xiaoyueyue](https://github.com/xiaoyueyue165).
+Copyright © 2019, [yanyue404](https://github.com/yanyue404).
 Released under the [MIT License](LICENSE).
